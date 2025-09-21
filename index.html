@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Surat Lamaran Kerja</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1><i class="fas fa-file-alt"></i> Formulir Surat Lamaran Kerja</h1>
+            <p>Isi formulir di bawah ini untuk membuat surat lamaran kerja yang profesional</p>
+        </header>
+
+        <main class="main-content">
+            <form id="lamaranForm" class="form-container">
+                <div class="form-section">
+                    <h2><i class="fas fa-user"></i> Data Pribadi</h2>
+                    <div class="form-group">
+                        <label for="namaLengkap">Nama Lengkap *</label>
+                        <input type="text" id="namaLengkap" name="namaLengkap" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="kotaSurat">Kota Pembuatan Surat *</label>
+                            <input type="text" id="kotaSurat" name="kotaSurat" list="cityList" placeholder="Ketik kota" required>
+                            <datalist id="cityList">
+                                <option value="Bandung">Bandung</option>
+<option value="Jakarta">Jakarta</option>
+<option value="Bekasi">Bekasi</option>
+<option value="Bogor">Bogor</option>
+<option value="Depok">Depok</option>
+<option value="Tangerang">Tangerang</option>
+<option value="Surabaya">Surabaya</option>
+<option value="Semarang">Semarang</option>
+<option value="Yogyakarta">Yogyakarta</option>
+<option value="Malang">Malang</option>
+<option value="Medan">Medan</option>
+<option value="Palembang">Palembang</option>
+<option value="Denpasar">Denpasar</option>
+<option value="Makassar">Makassar</option>
+<option value="Balikpapan">Balikpapan</option>
+<option value="Samarinda">Samarinda</option>
+<option value="Banjarmasin">Banjarmasin</option>
+<option value="Pontianak">Pontianak</option>
+<option value="Pekanbaru">Pekanbaru</option>
+<option value="Padang">Padang</option>
+<option value="Banda Aceh">Banda Aceh</option>
+<option value="Manado">Manado</option>
+<option value="Jayapura">Jayapura</option>
+<option value="Mataram">Mataram</option>
+<option value="Kupang">Kupang</option>
+<option value="Kuningan">Kuningan</option>
+<option value="Kudus">Kudus</option>
+<option value="Kendari">Kendari</option>
+<option value="Karawang">Karawang</option>
+<option value="Klaten">Klaten</option>
+<option value="Kediri">Kediri</option>
+<option value="Cirebon">Cirebon</option>
+<option value="Tasikmalaya">Tasikmalaya</option>
+<option value="Cimahi">Cimahi</option>
+<option value="Sukabumi">Sukabumi</option>
+<option value="Garut">Garut</option>
+<option value="Purwokerto">Purwokerto</option>
+<option value="Solo">Solo</option>
+<option value="Magelang">Magelang</option>
+<option value="Jember">Jember</option>
+<option value="Probolinggo">Probolinggo</option>
+<option value="Tegal">Tegal</option>
+<option value="Cilegon">Cilegon</option>
+<option value="Serang">Serang</option>
+<option value="Ambon">Ambon</option>
+<option value="Ternate">Ternate</option>
+<option value="Tidore">Tidore</option>
+<option value="Sorong">Sorong</option>
+<option value="Biak">Biak</option>
+<option value="Merauke">Merauke</option>
+                                <option value="Aceh">Aceh</option>
+                                <option value="Lhokseumawe">Lhokseumawe</option>
+                                <option value="Langsa">Langsa</option>
+                                <option value="Sabang">Sabang</option>
+                                <option value="Subulussalam">Subulussalam</option>
+                                <option value="Pematangsiantar">Pematangsiantar</option>
+                                <option value="Binjai">Binjai</option>
+                                <option value="Tebing Tinggi">Tebing Tinggi</option>
+                                <option value="Padangsidimpuan">Padangsidimpuan</option>
+                                <option value="Sibolga">Sibolga</option>
+                                <option value="Tanjungbalai">Tanjungbalai</option>
+                                <option value="Gunungsitoli">Gunungsitoli</option>
+                                <option value="Bukittinggi">Bukittinggi</option>
+                                <option value="Payakumbuh">Payakumbuh</option>
+                                <option value="Pariaman">Pariaman</option>
+                                <option value="Solok">Solok</option>
+                                <option value="Sawahlunto">Sawahlunto</option>
+                                <option value="Padangpanjang">Padangpanjang</option>
+                                <option value="Dumai">Dumai</option>
+                                <option value="Jambi">Jambi</option>
+                                <option value="Sungai Penuh">Sungai Penuh</option>
+                                <option value="Prabumulih">Prabumulih</option>
+                                <option value="Pagar Alam">Pagar Alam</option>
+                                <option value="Lubuklinggau">Lubuklinggau</option>
+                                <option value="Bengkulu">Bengkulu</option>
+                                <option value="Bandar Lampung">Bandar Lampung</option>
+                                <option value="Metro">Metro</option>
+                                <option value="Jakarta Pusat">Jakarta Pusat</option>
+                                <option value="Jakarta Utara">Jakarta Utara</option>
+                                <option value="Jakarta Barat">Jakarta Barat</option>
+                                <option value="Jakarta Selatan">Jakarta Selatan</option>
+                                <option value="Jakarta Timur">Jakarta Timur</option>
+                                <option value="Kepulauan Seribu">Kepulauan Seribu</option>
+                                <option value="Banjar">Banjar</option>
+                                <option value="Surakarta">Surakarta</option>
+                                <option value="Salatiga">Salatiga</option>
+                                <option value="Pekalongan">Pekalongan</option>
+                                <option value="Cilacap">Cilacap</option>
+                                <option value="Kebumen">Kebumen</option>
+                                <option value="Pasuruan">Pasuruan</option>
+                                <option value="Mojokerto">Mojokerto</option>
+                                <option value="Madiun">Madiun</option>
+                                <option value="Blitar">Blitar</option>
+                                <option value="Batu">Batu</option>
+                                <option value="Bima">Bima</option>
+                                <option value="Bontang">Bontang</option>
+                                <option value="Tarakan">Tarakan</option>
+                                <option value="Banjarbaru">Banjarbaru</option>
+                                <option value="Palangka Raya">Palangka Raya</option>
+                                <option value="Singkawang">Singkawang</option>
+                                <option value="Parepare">Parepare</option>
+                                <option value="Palopo">Palopo</option>
+                                <option value="Baubau">Baubau</option>
+                                <option value="Palu">Palu</option>
+                                <option value="Bitung">Bitung</option>
+                                <option value="Tomohon">Tomohon</option>
+                                <option value="Kotamobagu">Kotamobagu</option>
+                                <option value="Gorontalo">Gorontalo</option>
+                                <option value="Mamuju">Mamuju</option>
+                                <option value="Tual">Tual</option>
+                                <option value="Sofifi">Sofifi</option>
+                                <option value="Manokwari">Manokwari</option>
+                                <option value="Timika">Timika</option>
+                                <option value="Wamena">Wamena</option>
+                                <option value="Tangerang Selatan">Tangerang Selatan</option>
+                                <option value="Cianjur">Cianjur</option>
+                                <option value="Purwakarta">Purwakarta</option>
+                                <option value="Subang">Subang</option>
+                                <option value="Indramayu">Indramayu</option>
+                                <option value="Sumedang">Sumedang</option>
+                                <option value="Majalengka">Majalengka</option>
+                                <option value="Ciamis">Ciamis</option>
+                                <option value="Pangandaran">Pangandaran</option>
+                                <option value="Bandung Barat">Bandung Barat</option>
+                                <option value="Purworejo">Purworejo</option>
+                                <option value="Wonosobo">Wonosobo</option>
+                                <option value="Temanggung">Temanggung</option>
+                                <option value="Boyolali">Boyolali</option>
+                                <option value="Sragen">Sragen</option>
+                                <option value="Karanganyar">Karanganyar</option>
+                                <option value="Wonogiri">Wonogiri</option>
+                                <option value="Sukoharjo">Sukoharjo</option>
+                                <option value="Banyumas">Banyumas</option>
+                                <option value="Purbalingga">Purbalingga</option>
+                                <option value="Banjarnegara">Banjarnegara</option>
+                                <option value="Batang">Batang</option>
+                                <option value="Pemalang">Pemalang</option>
+                                <option value="Brebes">Brebes</option>
+                                <option value="Pati">Pati</option>
+                                <option value="Jepara">Jepara</option>
+                                <option value="Demak">Demak</option>
+                                <option value="Grobogan">Grobogan</option>
+                                <option value="Blora">Blora</option>
+                                <option value="Rembang">Rembang</option>
+                                <option value="Sleman">Sleman</option>
+                                <option value="Bantul">Bantul</option>
+                                <option value="Gunung Kidul">Gunung Kidul</option>
+                                <option value="Kulon Progo">Kulon Progo</option>
+                                <option value="Ngawi">Ngawi</option>
+                                <option value="Magetan">Magetan</option>
+                                <option value="Ponorogo">Ponorogo</option>
+                                <option value="Pacitan">Pacitan</option>
+                                <option value="Trenggalek">Trenggalek</option>
+                                <option value="Tulungagung">Tulungagung</option>
+                                <option value="Bojonegoro">Bojonegoro</option>
+                                <option value="Tuban">Tuban</option>
+                                <option value="Lamongan">Lamongan</option>
+                                <option value="Bangkalan">Bangkalan</option>
+                                <option value="Sampang">Sampang</option>
+                                <option value="Pamekasan">Pamekasan</option>
+                                <option value="Sumenep">Sumenep</option>
+
+                            </datalist>
+                        </div>
+                    </div>
+                                         <div class="form-row">
+                         <div class="form-group">
+                             <label for="tempatLahir">Tempat Lahir *</label>
+                             <input type="text" id="tempatLahir" name="tempatLahir" required>
+                         </div>
+                         <div class="form-group">
+                             <label for="tanggalLahir">Tanggal Lahir *</label>
+                             <input type="date" id="tanggalLahir" name="tanggalLahir" required>
+                         </div>
+                     </div>
+                     <div class="form-row">
+                         <div class="form-group">
+                             <label for="agama">Agama *</label>
+                             <select id="agama" name="agama" required>
+                                 <option value="">Pilih Agama</option>
+                                 <option value="Islam">Islam</option>
+                                 <option value="Kristen">Kristen</option>
+                                 <option value="Katolik">Katolik</option>
+                                 <option value="Hindu">Hindu</option>
+                                 <option value="Buddha">Buddha</option>
+                                 <option value="Konghucu">Konghucu</option>
+                                 <option value="Lainnya">Lainnya</option>
+                             </select>
+                         </div>
+                         <div class="form-group">
+                             <label for="pendidikanTerakhir">Pendidikan Terakhir *</label>
+                             <input type="text" id="pendidikanTerakhir" name="pendidikanTerakhir" placeholder="Contoh: S1 Teknik Informatika" required>
+                         </div>
+                     </div>
+                    <div class="form-group">
+                        <label for="alamatLengkap">Alamat Lengkap *</label>
+                        <textarea id="alamatLengkap" name="alamatLengkap" rows="3" required></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nomorTelepon">Nomor Telepon *</label>
+                            <input type="tel" id="nomorTelepon" name="nomorTelepon" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2><i class="fas fa-briefcase"></i> Data Pekerjaan</h2>
+                    <div class="form-group">
+                        <label for="posisiJabatan">Posisi/Jabatan yang Dilamar *</label>
+                        <input type="text" id="posisiJabatan" name="posisiJabatan" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="namaPerusahaan">Nama Perusahaan *</label>
+                        <input type="text" id="namaPerusahaan" name="namaPerusahaan" required>
+                    </div>
+                     <div class="form-group">
+                         <label for="sumberInfo">Sumber Informasi Lowongan *</label>
+                         <input type="text" id="sumberInfo" name="sumberInfo" placeholder="Contoh: Instagram, LinkedIn, JobStreet, dll" required>
+                     </div>
+                </div>
+
+                <div class="form-section">
+                    <h2><i class="fas fa-upload"></i> Dokumen Pendukung</h2>
+                    <div class="form-group checkbox-group">
+                        <label><input type="checkbox" name="lampiran" value="Surat Lamaran" checked><span>Surat Lamaran</span></label>
+                        <label><input type="checkbox" name="lampiran" value="Soft file CV (Curriculum Vitae)" checked><span>Soft file CV (Curriculum Vitae)</span></label>
+                        <label><input type="checkbox" name="lampiran" value="Soft file Ijazah" checked><span>Soft file Ijazah</span></label>
+                        <label><input type="checkbox" name="lampiran" value="Soft file Transkip Nilai" checked><span>Soft file Transkip Nilai</span></label>
+                        <label><input type="checkbox" name="lampiran" value="Soft file Surat Keterangan Sehat" checked><span>Soft file Surat Keterangan Sehat</span></label>
+                        <label><input type="checkbox" name="lampiran" value="Soft file SKCK" checked><span>Soft file Skck</span></label>
+                        <label><input type="checkbox" name="lampiran" value="Sertifikat tambahan"><span>Sertifikat tambahan</span></label>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-magic"></i> Generate Surat
+                    </button>
+                    <button type="reset" class="btn btn-secondary">
+                        <i class="fas fa-undo"></i> Reset Form
+                    </button>
+                </div>
+            </form>
+
+            <div id="hasilSurat" class="hasil-surat" style="display: none;">
+                <div class="surat-header">
+                    <h2><i class="fas fa-file-text"></i> Hasil Surat Lamaran Kerja</h2>
+                    <div class="surat-actions">
+                        <button id="copyBtn" class="btn btn-outline">
+                            <i class="fas fa-copy"></i> Copy
+                        </button>
+                        <button id="downloadBtn" class="btn btn-success">
+                            <i class="fas fa-download"></i> Download PDF
+                        </button>
+                    </div>
+                </div>
+                <div id="suratContent" class="surat-content"></div>
+            </div>
+            
+            <!-- Modal Preview PDF -->
+            <div id="pdfPreviewModal" class="modal" style="display:none;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Preview PDF (A4)</h3>
+                        <button id="previewCloseBtn" class="modal-close" aria-label="Tutup">
+                            <i class="fas fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="pdf-preview-wrap">
+                            <img id="pdfPreviewImage" alt="Preview PDF" />
+                        </div>
+                    </div>
+                    <div class="modal-actions">
+                        <button id="previewDownloadBtn" class="btn btn-success">
+                            <i class="fas fa-download"></i> Unduh PDF
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
